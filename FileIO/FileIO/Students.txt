@@ -1,0 +1,4 @@
+﻿12|Shane|May|3.2
+14|Dan|May|2.9
+9|Lela|May|1.8
+16|Tamara|May|3.8
