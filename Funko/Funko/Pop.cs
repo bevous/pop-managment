@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Funko
 {
-    class Pop
+    public class Pop
     {
         /// <summary>
         /// Gets or sets the number.
@@ -100,5 +100,32 @@ namespace Funko
         {
             return this.Name.ToString();
         }
+
+        /// <summary>
+        /// The ==.
+        /// </summary>
+        /// <param name="lhs">
+        /// The lhs.
+        /// </param>
+        /// <param name="rhs">
+        /// The rhs.
+        /// </param>
+        /// <returns>
+        /// </returns>
+        public static bool operator ==(Pop lhs, Pop rhs) =>
+            (!object.ReferenceEquals(lhs, null)) && lhs.Equals(rhs);
+
+        /// <summary>
+        /// The !=.
+        /// </summary>
+        /// <param name="lhs">
+        /// The lhs.
+        /// </param>
+        /// <param name="rhs">
+        /// The rhs.
+        /// </param>
+        /// <returns>
+        /// </returns>
+        public static bool operator !=(Pop lhs, Pop rhs) => !(lhs == rhs);
     }
 }

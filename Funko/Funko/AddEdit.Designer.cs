@@ -28,81 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.NameTextBox = new System.Windows.Forms.TextBox();
+            this.NumberTextBox = new System.Windows.Forms.TextBox();
+            this.ExclusiveTextBox = new System.Windows.Forms.TextBox();
+            this.SizeTextBox = new System.Windows.Forms.TextBox();
+            this.TypeTextBox = new System.Windows.Forms.TextBox();
+            this.DoneButton = new System.Windows.Forms.Button();
+            this.CancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // NameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 26);
-            this.textBox1.TabIndex = 0;
+            this.NameTextBox.Location = new System.Drawing.Point(12, 22);
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.Size = new System.Drawing.Size(182, 26);
+            this.NameTextBox.TabIndex = 0;
             // 
-            // textBox2
+            // NumberTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 26);
-            this.textBox2.TabIndex = 2;
+            this.NumberTextBox.Location = new System.Drawing.Point(12, 70);
+            this.NumberTextBox.Name = "NumberTextBox";
+            this.NumberTextBox.Size = new System.Drawing.Size(182, 26);
+            this.NumberTextBox.TabIndex = 2;
             // 
-            // textBox3
+            // ExclusiveTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 125);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(182, 26);
-            this.textBox3.TabIndex = 4;
+            this.ExclusiveTextBox.Location = new System.Drawing.Point(12, 125);
+            this.ExclusiveTextBox.Name = "ExclusiveTextBox";
+            this.ExclusiveTextBox.Size = new System.Drawing.Size(182, 26);
+            this.ExclusiveTextBox.TabIndex = 4;
             // 
-            // textBox4
+            // SizeTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 178);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(182, 26);
-            this.textBox4.TabIndex = 6;
+            this.SizeTextBox.Location = new System.Drawing.Point(12, 178);
+            this.SizeTextBox.Name = "SizeTextBox";
+            this.SizeTextBox.Size = new System.Drawing.Size(182, 26);
+            this.SizeTextBox.TabIndex = 6;
             // 
-            // textBox5
+            // TypeTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 228);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(182, 26);
-            this.textBox5.TabIndex = 8;
+            this.TypeTextBox.Location = new System.Drawing.Point(12, 228);
+            this.TypeTextBox.Name = "TypeTextBox";
+            this.TypeTextBox.Size = new System.Drawing.Size(182, 26);
+            this.TypeTextBox.TabIndex = 8;
             // 
-            // button6
+            // DoneButton
             // 
-            this.button6.Location = new System.Drawing.Point(12, 278);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(182, 34);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.DoneButton.Location = new System.Drawing.Point(12, 278);
+            this.DoneButton.Name = "DoneButton";
+            this.DoneButton.Size = new System.Drawing.Size(182, 34);
+            this.DoneButton.TabIndex = 10;
+            this.DoneButton.Text = "Done";
+            this.DoneButton.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // CancelButton
             // 
-            this.button7.Location = new System.Drawing.Point(12, 328);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(182, 34);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.CancelButton.Location = new System.Drawing.Point(12, 328);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(182, 34);
+            this.CancelButton.TabIndex = 11;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
             // 
             // AddEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(212, 374);
+            this.ClientSize = new System.Drawing.Size(217, 374);
             this.ControlBox = false;
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CancelButton);
+            this.Controls.Add(this.DoneButton);
+            this.Controls.Add(this.TypeTextBox);
+            this.Controls.Add(this.SizeTextBox);
+            this.Controls.Add(this.ExclusiveTextBox);
+            this.Controls.Add(this.NumberTextBox);
+            this.Controls.Add(this.NameTextBox);
             this.Name = "AddEdit";
             this.Text = "AddEdit";
             this.ResumeLayout(false);
@@ -112,12 +112,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox NameTextBox;
+        private System.Windows.Forms.TextBox NumberTextBox;
+        private System.Windows.Forms.TextBox ExclusiveTextBox;
+        private System.Windows.Forms.TextBox SizeTextBox;
+        private System.Windows.Forms.TextBox TypeTextBox;
+        private System.Windows.Forms.Button DoneButton;
+        private System.Windows.Forms.Button CancelButton;
     }
 }

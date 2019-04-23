@@ -12,9 +12,11 @@ namespace Funko
 {
     public partial class AddEdit : Form
     {
+
+        public Pop EditFormPop { get; set; }
         public AddEdit()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
     }
 }
