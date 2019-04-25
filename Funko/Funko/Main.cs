@@ -38,6 +38,7 @@ namespace Funko
                 if (result == DialogResult.OK)
                 {
                     var fileName = open.FileName;
+                    PopList.Delim = this.DeliminatorTextBox.Text[0];
                     this.Pops = PopList.GetAll(fileName);
                     this.BindPops();
                 } // else, the user closed the dialog box, DoNothing();

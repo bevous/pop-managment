@@ -75,6 +75,7 @@
             // 
             // DoneButton
             // 
+            this.DoneButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.DoneButton.Location = new System.Drawing.Point(11, 222);
             this.DoneButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DoneButton.Name = "DoneButton";

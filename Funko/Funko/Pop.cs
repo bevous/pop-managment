@@ -1,21 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Funko
 {
+    /// <summary>
+    /// The pop.
+    /// </summary>
     public class Pop
     {
+        /// <summary>
+        /// The number.
+        /// </summary>
+        private int number;
+
+        /// <summary>
+        /// The type.
+        /// </summary>
+        private string type;
+
+        /// <summary>
+        /// The size.
+        /// </summary>
+        private int size;
+
+        private string name;
+
         /// <summary>
         /// Gets or sets the number.
         /// </summary>
         public int Number
         {
-            get => this.Number;
+            get => this.number;
 
-            set => this.Number = value > 0 ? value : 0;
+            set => this.number = value > 0 ? value : 0;
         }
 
         /// <summary>
@@ -23,8 +38,8 @@ namespace Funko
         /// </summary>
         public string Type
         {
-            get => this.Type;
-            set => this.Type = value == string.Empty ? "No name given." : value;
+            get => this.type;
+            set => this.type = value == string.Empty ? "No name given." : value;
         }
 
         /// <summary>
@@ -32,8 +47,8 @@ namespace Funko
         /// </summary>
         public string Name
         {
-            get => this.Name;
-            set => this.Name = value == string.Empty ? "No name given." : value;
+            get => this.name;
+            set => this.name = value != string.Empty ? value : "no name given";
         }
 
         /// <summary>
@@ -50,8 +65,8 @@ namespace Funko
         /// </summary>
         public int Size
         {
-            get => this.Size;
-            set => this.Size = (value == 3 || value == 6 || value == 10) ? value : 3;
+            get => this.size;
+            set => this.size = (value == 3 || value == 6 || value == 10) ? value : 3;
         }
 
         /// <summary>

@@ -42,25 +42,28 @@
             // PopDataGridView
             // 
             this.PopDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PopDataGridView.Location = new System.Drawing.Point(-2, 39);
+            this.PopDataGridView.Location = new System.Drawing.Point(-2, 31);
+            this.PopDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PopDataGridView.Name = "PopDataGridView";
             this.PopDataGridView.RowTemplate.Height = 28;
-            this.PopDataGridView.Size = new System.Drawing.Size(240, 161);
+            this.PopDataGridView.Size = new System.Drawing.Size(480, 269);
             this.PopDataGridView.TabIndex = 0;
             // 
             // DeliminatorTextBox
             // 
-            this.DeliminatorTextBox.Location = new System.Drawing.Point(244, 51);
+            this.DeliminatorTextBox.Location = new System.Drawing.Point(484, 54);
+            this.DeliminatorTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DeliminatorTextBox.Name = "DeliminatorTextBox";
-            this.DeliminatorTextBox.Size = new System.Drawing.Size(100, 26);
+            this.DeliminatorTextBox.Size = new System.Drawing.Size(89, 22);
             this.DeliminatorTextBox.TabIndex = 1;
             this.DeliminatorTextBox.Text = ",";
             // 
             // AddEditButton
             // 
-            this.AddEditButton.Location = new System.Drawing.Point(244, 120);
+            this.AddEditButton.Location = new System.Drawing.Point(484, 109);
+            this.AddEditButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddEditButton.Name = "AddEditButton";
-            this.AddEditButton.Size = new System.Drawing.Size(100, 80);
+            this.AddEditButton.Size = new System.Drawing.Size(89, 64);
             this.AddEditButton.TabIndex = 3;
             this.AddEditButton.Text = "Add / Edit";
             this.AddEditButton.UseVisualStyleBackColor = true;
@@ -73,7 +76,8 @@
             this.fileToolStripMenuItem});
             this.MainFormMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MainFormMenuStrip.Name = "MainFormMenuStrip";
-            this.MainFormMenuStrip.Size = new System.Drawing.Size(347, 33);
+            this.MainFormMenuStrip.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.MainFormMenuStrip.Size = new System.Drawing.Size(585, 28);
             this.MainFormMenuStrip.TabIndex = 5;
             this.MainFormMenuStrip.Text = "menuStrip1";
             // 
@@ -83,33 +87,34 @@
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 200);
+            this.ClientSize = new System.Drawing.Size(585, 300);
             this.Controls.Add(this.AddEditButton);
             this.Controls.Add(this.DeliminatorTextBox);
             this.Controls.Add(this.PopDataGridView);
             this.Controls.Add(this.MainFormMenuStrip);
             this.MainMenuStrip = this.MainFormMenuStrip;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "Pop Manager";
             ((System.ComponentModel.ISupportInitialize)(this.PopDataGridView)).EndInit();

@@ -32,6 +32,8 @@ namespace Funko
         {
             bool IsNumber = int.TryParse(this.NumberTextBox.Text, out var NewNumber);
             bool IsSize = int.TryParse(this.SizeTextBox.Text, out var NewSize);
+            var name = this.NameTextBox.Text;
+            var type = this.TypeTextBox.Text;
             if (IsNumber && 
                 IsSize && 
                 this.NameTextBox.Text != string.Empty && 
@@ -39,11 +41,11 @@ namespace Funko
             {
                 this.EditFormPop = new Pop
                                        {
-                                           Name = this.NameTextBox.Text,
+                                           Name = name,
                                            Number = NewNumber,
                                            Exclusive = this.ExclusiveCheckBox.Checked,
                                            Size = NewSize,
-                                           Type = this.TypeTextBox.Text
+                                           Type = type
                                        };
             }
             else
