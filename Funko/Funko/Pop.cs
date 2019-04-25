@@ -24,7 +24,7 @@ namespace Funko
         public string Type
         {
             get => this.Type;
-            set => this.Type = value ?? "N/A";
+            set => this.Type = value == string.Empty ? "No name given." : value;
         }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Funko
         public string Name
         {
             get => this.Name;
-            set => this.Name = value ?? "N/A";
+            set => this.Name = value == string.Empty ? "No name given." : value;
         }
 
         /// <summary>

@@ -64,18 +64,13 @@ namespace Funko
         private void AddEditButton_Click(object sender, EventArgs e)
         {
             var entryForm = new AddEdit();
-            // entryForm.Show(); // This is not the correct method - this just opens the form. 
             var result = entryForm.ShowDialog(); // This creates the form as an application modal dialog form. 
 
             if (result == DialogResult.OK)
             {
-                this.ResultLabel.Text = entryForm.NumberEntry.ToString("G");
-                // (int) entryForm.Tag
-            }
-            else
-            {
-                this.ResultLabel.Text = "Nothing entered!";
-            }
+                this.Pops.Add(entryForm.EditFormPop);
+                this.BindPops();
+            } // else, form Exited DoNothing();
         }
     }
 }
