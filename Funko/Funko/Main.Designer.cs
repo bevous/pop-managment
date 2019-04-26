@@ -35,6 +35,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PopDataGridView)).BeginInit();
             this.MainFormMenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -42,28 +43,28 @@
             // PopDataGridView
             // 
             this.PopDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PopDataGridView.Location = new System.Drawing.Point(-2, 31);
+            this.PopDataGridView.Location = new System.Drawing.Point(-2, 39);
             this.PopDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PopDataGridView.Name = "PopDataGridView";
             this.PopDataGridView.RowTemplate.Height = 28;
-            this.PopDataGridView.Size = new System.Drawing.Size(480, 269);
+            this.PopDataGridView.Size = new System.Drawing.Size(540, 336);
             this.PopDataGridView.TabIndex = 0;
             // 
             // DeliminatorTextBox
             // 
-            this.DeliminatorTextBox.Location = new System.Drawing.Point(484, 54);
+            this.DeliminatorTextBox.Location = new System.Drawing.Point(544, 68);
             this.DeliminatorTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DeliminatorTextBox.Name = "DeliminatorTextBox";
-            this.DeliminatorTextBox.Size = new System.Drawing.Size(89, 22);
+            this.DeliminatorTextBox.Size = new System.Drawing.Size(100, 26);
             this.DeliminatorTextBox.TabIndex = 1;
             this.DeliminatorTextBox.Text = ",";
             // 
             // AddEditButton
             // 
-            this.AddEditButton.Location = new System.Drawing.Point(484, 109);
+            this.AddEditButton.Location = new System.Drawing.Point(544, 136);
             this.AddEditButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddEditButton.Name = "AddEditButton";
-            this.AddEditButton.Size = new System.Drawing.Size(89, 64);
+            this.AddEditButton.Size = new System.Drawing.Size(100, 80);
             this.AddEditButton.TabIndex = 3;
             this.AddEditButton.Text = "Add / Edit";
             this.AddEditButton.UseVisualStyleBackColor = true;
@@ -76,8 +77,7 @@
             this.fileToolStripMenuItem});
             this.MainFormMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MainFormMenuStrip.Name = "MainFormMenuStrip";
-            this.MainFormMenuStrip.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.MainFormMenuStrip.Size = new System.Drawing.Size(585, 28);
+            this.MainFormMenuStrip.Size = new System.Drawing.Size(658, 33);
             this.MainFormMenuStrip.TabIndex = 5;
             this.MainFormMenuStrip.Text = "menuStrip1";
             // 
@@ -87,28 +87,38 @@
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(140, 30);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(140, 30);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(544, 255);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(100, 77);
+            this.DeleteButton.TabIndex = 6;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 300);
+            this.ClientSize = new System.Drawing.Size(658, 375);
+            this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.AddEditButton);
             this.Controls.Add(this.DeliminatorTextBox);
             this.Controls.Add(this.PopDataGridView);
@@ -134,6 +144,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }
 

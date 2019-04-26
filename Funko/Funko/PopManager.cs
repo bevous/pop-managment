@@ -8,11 +8,28 @@ namespace Funko
 {
     using System.IO;
 
+    /// <summary>
+    /// The pop manager.
+    /// </summary>
     class PopManager
     {
-
+        /// <summary>
+        /// Gets or sets the delimiter.
+        /// </summary>
         public static char Delimiter { get; set; }
 
+        /// <summary>
+        /// The try parse.
+        /// </summary>
+        /// <param name="line">
+        /// The line.
+        /// </param>
+        /// <param name="pop">
+        /// The pop.
+        /// </param>
+        /// <returns>
+        /// The <see cref="bool"/>.
+        /// </returns>
         public static bool TryParse(string line, out Pop pop)
         {
             if (line is null)
@@ -28,6 +45,15 @@ namespace Funko
             }
         }
 
+        /// <summary>
+        /// The get pops.
+        /// </summary>
+        /// <param name="fileName">
+        /// The file name.
+        /// </param>
+        /// <returns>
+        /// The <see cref="PopList"/>.
+        /// </returns>
         public static PopList GetPops(string fileName)
         {
             var list = new PopList();
@@ -44,6 +70,15 @@ namespace Funko
             return list;
         }
 
+        /// <summary>
+        /// The save pops.
+        /// </summary>
+        /// <param name="fileName">
+        /// The file name.
+        /// </param>
+        /// <param name="list">
+        /// The list.
+        /// </param>
         public static void SavePops(string fileName, PopList list)
         {
             using (var writer = new StreamWriter(
@@ -56,6 +91,15 @@ namespace Funko
             }
         }
 
+        /// <summary>
+        /// The to file string.
+        /// </summary>
+        /// <param name="pop">
+        /// The pop.
+        /// </param>
+        /// <returns>
+        /// The <see cref="string"/>.
+        /// </returns>
         public static string ToFileString(Pop pop) =>
             $"{pop.Name}{Delimiter}{pop.Number}{Delimiter}{pop.Exclusive}{Delimiter}{pop.Size}{Delimiter}{pop.Type}";
     }

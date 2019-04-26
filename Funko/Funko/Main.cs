@@ -1,29 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Funko
 {
+    /// <summary>
+    /// The main form.
+    /// </summary>
     public partial class MainForm : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainForm"/> class.
+        /// </summary>
         public MainForm()
         {
             this.InitializeComponent();
         }
+
+        /// <summary>
+        /// The pops.
+        /// </summary>
         public PopList Pops = new PopList();
 
+        /// <summary>
+        /// binds the pops list to the control.
+        /// </summary>
         private void BindPops()
         {
             this.PopDataGridView.DataSource = null;
             this.PopDataGridView.DataSource = this.Pops;
         }
 
+        /// <summary>
+        /// The open tool strip menu item_ click.
+        /// </summary>
+        /// <param name="sender">
+        /// The sender.
+        /// </param>
+        /// <param name="e">
+        /// The e.
+        /// </param>
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (var open = new OpenFileDialog())
@@ -45,6 +60,15 @@ namespace Funko
             }
         }
 
+        /// <summary>
+        /// The save tool strip menu item_ click.
+        /// </summary>
+        /// <param name="sender">
+        /// The sender.
+        /// </param>
+        /// <param name="e">
+        /// The e.
+        /// </param>
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (var save = new SaveFileDialog())
@@ -62,6 +86,15 @@ namespace Funko
             }
         }
 
+        /// <summary>
+        /// The add edit button_ click.
+        /// </summary>
+        /// <param name="sender">
+        /// The sender.
+        /// </param>
+        /// <param name="e">
+        /// The e.
+        /// </param>
         private void AddEditButton_Click(object sender, EventArgs e)
         {
             var entryForm = new AddEdit();
@@ -69,8 +102,11 @@ namespace Funko
 
             if (result == DialogResult.OK)
             {
-                this.Pops.Add(entryForm.EditFormPop);
-                this.BindPops();
+                if (!this.Pops.Contains(entryForm.EditFormPop))
+                {
+                    this.Pops.Add(entryForm.EditFormPop);
+                    this.BindPops();
+                } // else, pop exists DoNothing();
             } // else, form Exited DoNothing();
         }
     }
